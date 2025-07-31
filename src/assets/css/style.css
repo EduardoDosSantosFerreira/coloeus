@@ -1,0 +1,202 @@
+/* Paleta de cores principal */
+:root {
+  --azul-profundo: #1e3a8a;
+  --preto-fundo: #111111;
+  --cinza-claro: #f5f5f5;
+  --cinza-medio: #b0b0b0;
+  --cinza-escuro: #222222;
+  --branco: #fff;
+  --cinza-navbar: #23272b;
+  --cinza-feature: #1a1a1a;
+  --cinza-feature-hover: #232323;
+  --cinza-scrollbar: #444444;
+  --cinza-scrollbar-track: #222222;
+  --cinza-section-heading: #888888;
+  --cinza-box-shadow: rgba(0, 0, 0, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--preto-fundo);
+  color: var(--cinza-claro);
+}
+
+/* HERO/HEADER */
+.header {
+  background-color: var(--branco);
+  color: #111;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.header p {
+  font-size: 1.5rem;
+  color: #222;
+}
+
+/* Ícone do hero (fa-feather-alt) preto */
+.header .fa-feather-alt,
+.header .feature-icon {
+  color: #000 !important;
+}
+
+/* Botão do hero preto */
+.header .btn,
+.header .btn.btn-outline-light,
+.header .btn.btn-lg {
+  color: #111 !important;
+  background-color: var(--branco) !important;
+  border: 2px solid #111 !important;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+.header .btn:hover,
+.header .btn.btn-outline-light:hover,
+.header .btn.btn-lg:hover {
+  color: var(--branco) !important;
+  background-color: #111 !important;
+  border: 2px solid var(--branco) !important;
+}
+
+/* Fim do HERO/HEADER */
+
+.navbar {
+  background-color: var(--cinza-navbar) !important;
+  font-family: 'Poppins', sans-serif;
+  padding: 15px 0;
+  box-shadow: 0 4px 6px var(--cinza-box-shadow);
+}
+
+.navbar .navbar-brand {
+  color: var(--branco);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--cinza-claro);
+  font-size: 1.3rem;
+  padding: 10px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--cinza-escuro);
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.section-heading {
+  color: var(--cinza-section-heading);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: var(--cinza-feature);
+  box-shadow: 0 4px 6px var(--cinza-box-shadow);
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  background-color: var(--cinza-feature-hover);
+}
+
+.feature-icon {
+  color: #bbbbbb;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--cinza-claro);
+}
+
+.text-muted {
+  font-size: 1rem;
+  color: var(--cinza-medio) !important;
+}
+
+@media (min-width: 768px) {
+  .feature-item {
+    height: 100%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cinza-scrollbar);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--cinza-scrollbar-track);
+}
+
+#ico-ftr {
+  width: 50px;
+  margin-right: 10px;
+  filter: grayscale(0.2);
+}
+
+#ico-ftr:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  filter: grayscale(0);
+}
+
+.animated-text {
+  animation: blackWhiteBlink 1.2s infinite;
+}
+
+@keyframes blackWhiteBlink {
+  0%, 100% { color: var(--branco); }
+  25% { color: #bdbdbd; }
+  50% { color: #000; }
+  75% { color: #bdbdbd; }
+}
+
+footer {
+  background-color: #000000 !important;
+}
+
+.footer-logo {
+  width: 50px;
+}
+
+/* Exemplo de uso do azul profundo na interface */
+.btn-azul-profundo {
+  background-color: var(--azul-profundo) !important;
+  color: var(--branco) !important;
+  border: 2px solid var(--azul-profundo) !important;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+.btn-azul-profundo:hover {
+  background-color: var(--branco) !important;
+  color: var(--azul-profundo) !important;
+  border: 2px solid var(--azul-profundo) !important;
+}
