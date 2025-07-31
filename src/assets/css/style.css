@@ -44,19 +44,19 @@ body {
   color: #222;
 }
 
-/* Ícone do hero (fa-feather-alt) preto */
+/* Ícone do hero (fa-feather-alt) azul profundo */
 .header .fa-feather-alt,
 .header .feature-icon {
-  color: #000 !important;
+  color: var(--azul-profundo) !important;
 }
 
-/* Botão do hero preto */
+/* Botão do hero azul profundo */
 .header .btn,
 .header .btn.btn-outline-light,
 .header .btn.btn-lg {
-  color: #111 !important;
+  color: var(--azul-profundo) !important;
   background-color: var(--branco) !important;
-  border: 2px solid #111 !important;
+  border: 2px solid var(--azul-profundo) !important;
   transition: background 0.3s, color 0.3s, border 0.3s;
 }
 
@@ -64,14 +64,14 @@ body {
 .header .btn.btn-outline-light:hover,
 .header .btn.btn-lg:hover {
   color: var(--branco) !important;
-  background-color: #111 !important;
+  background-color: var(--azul-profundo) !important;
   border: 2px solid var(--branco) !important;
 }
 
 /* Fim do HERO/HEADER */
 
 .navbar {
-  background-color: var(--cinza-navbar) !important;
+  background-color: var(--azul-profundo) !important;
   font-family: 'Poppins', sans-serif;
   padding: 15px 0;
   box-shadow: 0 4px 6px var(--cinza-box-shadow);
@@ -84,20 +84,20 @@ body {
 }
 
 .navbar .navbar-nav .nav-link {
-  color: var(--cinza-claro);
+  color: var(--branco);
   font-size: 1.3rem;
   padding: 10px 15px;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  color: var(--cinza-escuro);
-  background-color: #e0e0e0;
+  color: var(--azul-profundo);
+  background-color: var(--branco);
   border-radius: 5px;
 }
 
 .section-heading {
-  color: var(--cinza-section-heading);
+  color: var(--azul-profundo);
   text-align: center;
   margin-bottom: 50px;
 }
@@ -108,6 +108,7 @@ body {
   border-radius: 8px;
   background-color: var(--cinza-feature);
   box-shadow: 0 4px 6px var(--cinza-box-shadow);
+  border-left: 6px solid var(--azul-profundo);
   transition: all 0.3s ease;
   margin-bottom: 30px;
   display: flex;
@@ -118,10 +119,11 @@ body {
 .feature-item:hover {
   transform: translateY(-5px);
   background-color: var(--cinza-feature-hover);
+  border-left: 6px solid var(--branco);
 }
 
 .feature-icon {
-  color: #bbbbbb;
+  color: var(--azul-profundo);
   font-size: 2rem;
   margin-bottom: 10px;
 }
@@ -129,7 +131,7 @@ body {
 .feature-title {
   font-size: 1.25rem;
   font-weight: bold;
-  color: var(--cinza-claro);
+  color: var(--azul-profundo);
 }
 
 .text-muted {
@@ -148,7 +150,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--cinza-scrollbar);
+  background: var(--azul-profundo);
   border-radius: 0px;
 }
 
@@ -174,9 +176,9 @@ body {
 
 @keyframes blackWhiteBlink {
   0%, 100% { color: var(--branco); }
-  25% { color: #bdbdbd; }
+  25% { color: var(--azul-profundo); }
   50% { color: #000; }
-  75% { color: #bdbdbd; }
+  75% { color: var(--azul-profundo); }
 }
 
 footer {
